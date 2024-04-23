@@ -1,0 +1,170 @@
+[
+    {
+      "name": "Футболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/_ac3BL5y_U50IQ",
+      "id": "1",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Брюки",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/SRpaIywtKiXxAw",
+      "id": "2",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Штаны спортивные",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/86kyPmy0JPLwEg",
+      "id": "3",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Джинсы карго",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/t7_AudjVJjG2-w",
+      "id": "4",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Штаны спортивные",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/oaeEdTdHcVKTCQ",
+      "id": "5",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Джинсы",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/NuuMVd5jK1R52A",
+      "id": "6",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Джинсы",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/BfceDUjbT2y05A",
+      "id": "7",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/YcljcsEK5vUa9Q",
+      "id": "8",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/eCrl295NeJ0o-g",
+      "id": "9",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/35joVOkWypfjPA",
+      "id": "10",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/Hi-SASops43H3w",
+      "id": "11",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/W0-ZMT_I8rs6gA",
+      "id": "12",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/16lkXL4dqXaDJA",
+      "id": "13",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка мужская",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/CZ1hmIIRF3xTMw",
+      "id": "14",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Брюки",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/NltuudhHuwUJIg",
+      "id": "15",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Брюки",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/rzUCAynr2IG9Yw",
+      "id": "16",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/DP0QlsNKQJ1wqg",
+      "id": "17",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/ZYz8URhRlVzutQ",
+      "id": "18",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/huAqpB2E-kRC2w",
+      "id": "19",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/yuoLTQnCfjSnVw",
+      "id": "20",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.by/i/aILXV5YjK7Owgw",
+      "id": "21",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    }
+]

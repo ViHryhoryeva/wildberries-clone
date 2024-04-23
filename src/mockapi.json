@@ -1,0 +1,170 @@
+[
+    {
+      "name": "Футболка",
+      "image": "https://drive.usercontent.google.com/download?id=1s4mCFTkWaVRre8Mr5h9ybQtsbJ25hd35",
+      "id": "1",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Брюки",
+      "image": "https://drive.usercontent.google.com/download?id=1UxUGtWLUZoYv6dpGKl1BIBP8E4gMCDr8&export=view&authuser=0",
+      "id": "2",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Штаны спортивные",
+      "image": "https://drive.usercontent.google.com/download?id=1TFjckzxCkGp637Nt_RhWIcNnh1kdFhsK",
+      "id": "3",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Джинсы карго",
+      "image": "https://drive.usercontent.google.com/download?id=1UspWiTcwudREfPZAUW3G2_rPDpH4Tb1u",
+      "id": "4",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Штаны спортивные",
+      "image": "https://drive.usercontent.google.com/download?id=1pcdFuOO3aOl4_EFLlW006nwelFotPCRT",
+      "id": "5",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Джинсы",
+      "image": "https://drive.usercontent.google.com/download?id=1o1Zqnx_L2t0MgVqM-wjDsNZt6dJdQ5BV",
+      "id": "6",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Джинсы",
+      "image": "https://drive.usercontent.google.com/download?id=1cNBkcg_54tXJKHTPZCzUfzRTl69h5Oxj",
+      "id": "7",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://drive.usercontent.google.com/download?id=1VwvNM4K3qgGDuS-YqGQfd6_JrCTekd2R",
+      "id": "8",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://drive.usercontent.google.com/download?id=1MOxLLCizLK7cgbBe6Wj797fi2jTeESDN",
+      "id": "9",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://drive.usercontent.google.com/download?id=1xq9DxRGeOHg7vf1ibBSpHRpzvQH63tgL",
+      "id": "10",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Рубашка",
+      "image": "https://drive.usercontent.google.com/download?id=12BBjkTWybyaSNmrkauOmqTgzOwc4m-Vn",
+      "id": "11",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка",
+      "image": "https://drive.usercontent.google.com/download?id=1nvRuTlwZAD3ekHuuxQ0tFSIi6e4sJ0ej",
+      "id": "12",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка",
+      "image": "https://drive.usercontent.google.com/download?id=1uKmWXjhflfaLjlPvMvNWTqXdq78rIhcl",
+      "id": "13",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка мужская",
+      "image": "https://drive.usercontent.google.com/download?id=1rs2fh2iWwPeIRYxyGLMRUWQ2o8Tn98R7",
+      "id": "14",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Брюки",
+      "image": "https://drive.usercontent.google.com/download?id=15caHjgkOAjqMstfhaEVKMHI-GjVF9pA-",
+      "id": "15",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Брюки",
+      "image": "https://drive.usercontent.google.com/download?id=1cB01124DKaTmbSI96kyUSlkGeBI7J5-m",
+      "id": "16",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Футболка",
+      "image": "https://drive.usercontent.google.com/download?id=1uO49Q875OYzanX8LmdLmg2Xuwij6QUp_",
+      "id": "17",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://drive.usercontent.google.com/download?id=1w74einPjUCaM8j2Deg6w_nuMTKTR9wxI",
+      "id": "18",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://drive.usercontent.google.com/download?id=1WPtXsAPim9FD93g_ImV4cJh2aWLk64J1",
+      "id": "19",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://drive.usercontent.google.com/download?id=1RtqDBRBMwcOQaSXajpKd0jj8cJcFEm0D",
+      "id": "20",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    },
+    {
+      "name": "Бейсболка",
+      "image": "https://drive.usercontent.google.com/download?id=1ZC7Cy55YMxcunOs4TBJESnrS7Xcnzra5",
+      "id": "21",
+      "price": 1000,
+      "discount": 0.1,
+      "mark": "5"
+    }
+]

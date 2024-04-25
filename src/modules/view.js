@@ -1,11 +1,27 @@
-import {findItemsByName, itemList} from "./model";
-import {saveItemToBasket, getItemsFromBasket, deleteItemsFromBasket} from './storage.js';
+import {findItemsByName} from "./model";
+import {saveItemToBasket, getItemsFromBasket, deleteItemsFromBasket, getItemsQuantity} from './storage.js';
 
 const divWrapperWildberries = document.querySelector('.wrapper__wildberies');
 
 const divHeader = document.createElement('div');
 divHeader.classList.add('header');
 divWrapperWildberries.appendChild(divHeader);
+
+// Функция, которая будет вызываться при прокрутке
+function handleScroll() {
+    // Проверяем, насколько прокручена страница по вертикали
+    var scrollPosition = window.scrollY;
+
+    // Условие, при котором добавляем класс
+    if (scrollPosition > 0) {
+    divHeader.classList.add('scrolled');
+    } else {
+    divHeader.classList.remove('scrolled');
+    }
+}
+
+// Добавляем прослушиватель события прокрутки
+window.addEventListener('scroll', handleScroll);
 
 const headerLogo = document.createElement('div');
 headerLogo.innerHTML = 'Wildberries';
@@ -25,32 +41,37 @@ headerPoisk.addEventListener('keyup', () => {
 })
 divHeader.appendChild(headerPoisk);
 
-const headerShoppingcart = document.createElement('button');
-headerShoppingcart.classList.add('header__shopping__cart');
-headerShoppingcart.innerHTML = 'Корзина';
-divHeader.appendChild(headerShoppingcart);
+const headerShoppingCart = document.createElement('button');
+headerShoppingCart.classList.add('header__shopping__cart');
+headerShoppingCart.innerHTML = 'Корзина' + getItemsQuantity();
+divHeader.appendChild(headerShoppingCart);
 
-function modalWindow() {
-    headerShoppingcart.addEventListener('click', () => {
-        shoppingCart.style.display = 'flex';
-        shoppingCart.style.flexDirection = 'column';
-        shoppingCart.style.margin = '0 auto';
-        showBasket();
-    })
-
-    window.onclick = function (event) {
-        if (event.target === shoppingCart) {
-            shoppingCart.style.display = "none";
-            shoppingCart.removeChild(headerShoppingcart);
-        }
-    }
+function changeBasketItemCount() {
+    document.querySelector('.header__shopping__cart').innerHTML = 'Корзина' + getItemsQuantity();
 }
-modalWindow();
+
+const shoppingWrap = document.createElement('div');
+shoppingWrap.classList.add('modal__wrapp');
+divWrapperWildberries.appendChild(shoppingWrap);
 
 const shoppingCart = document.createElement('div');
 shoppingCart.classList.add('shopping__cart');
-divHeader.appendChild(shoppingCart);
+shoppingWrap.appendChild(shoppingCart);
 
+// нажать на кнопку, открыть модальное окно корзины
+headerShoppingCart.addEventListener('click', () => {
+    shoppingWrap.style.display = 'flex';
+    showBasket();
+})
+
+// щелкнуть на любом месте вне модального, закрыть его
+window.addEventListener('click', (event) => {
+    if (event.target == shoppingWrap) {
+        shoppingWrap.style.display = "none";
+    }
+})
+
+// показать содержимое корзины
 function showBasket() {
     shoppingCart.innerHTML = '';
     let items = getItemsFromBasket();
@@ -70,6 +91,7 @@ function showBasket() {
     shoppingCartDelete.innerHTML = 'Очистить корзину';
     shoppingCartDelete.addEventListener('click', () => {
         deleteItemsFromBasket();
+        changeBasketItemCount();
     })
     shoppingCartTitle.appendChild(shoppingCartDelete);
     if (items !== null) {
@@ -108,9 +130,9 @@ function showBasket() {
 
 }
 
+// карусель - реклама
 const wrapperCarusel = document.querySelector('.carousel');
 divWrapperWildberries.appendChild(wrapperCarusel);
-
 
 const wrapperHitSales = document.createElement('div');
 wrapperHitSales.classList.add('wrapper__hit-sales');
@@ -120,20 +142,20 @@ const hitSales = document.createElement('h2');
 hitSales.classList.add('hit-sales');
 hitSales.innerHTML = 'Хиты продаж';
 wrapperHitSales.appendChild(hitSales);
+// 
 
 const wrapperProducts = document.createElement('div');
 wrapperProducts.classList.add('wrapper__products');
 wrapperHitSales.appendChild(wrapperProducts);
 
 export function showItemList(itemList) {
-
     wrapperProducts.innerHTML = '';
     itemList.forEach(item => {
         showItem(item);
     });
-
 }
 
+// создание карточки элемента
 export function showItem(item) {
     const wrapperProduct = document.createElement('div');
     wrapperProduct.classList.add('wrapper__product');
@@ -154,16 +176,41 @@ export function showItem(item) {
     imageBtn.innerHTML = 'Быстрый просмотр';
 
     imageBtn.addEventListener('click', () => {
-        image.style.width = '200%';
-        image.style.height = '200%';
-        image.style.zIndex = 100;
-        image.style.display = 'flex';
-        image.style.flexDirection = 'center';
+        modalWrapperImage.style.display = 'block';
     })
 
-
+    window.addEventListener('click', (event) => {
+        if (event.target == modalWrapperImage) {
+            modalWrapperImage.style.display = "none";
+        }
+    })
+  
     imageProduct.appendChild(imageBtn);
 
+    const modalWrapperImage = document.createElement('div');
+    modalWrapperImage.classList.add('modal__image-wrapp');
+    wrapperProduct.append(modalWrapperImage);
+
+    const modalBlock = document.createElement('div');
+    modalBlock.classList.add('modal__block');
+    modalWrapperImage.appendChild(modalBlock);
+
+    const modalImage = document.createElement('img');
+    modalImage.classList.add('modal__image');
+    modalImage.src = item.image;
+    modalBlock.appendChild(modalImage);
+
+    const modalName = document.createElement('div');
+    modalName.classList.add('modal__name');
+    modalName.innerHTML = item.name;
+    modalBlock.appendChild(modalName);
+
+    const modalPrice = document.createElement('div');
+    modalPrice.classList.add('modal__price');
+    modalPrice.innerHTML = `${item.priceWithDiscount} p`;
+    modalBlock.appendChild(modalPrice);
+        
+        
     const imageWrapButton = document.createElement('div');
     imageWrapButton.classList.add('image__wrap_botton');
     imageProduct.appendChild(imageWrapButton);
@@ -178,6 +225,7 @@ export function showItem(item) {
 
     imageBtnBasket.addEventListener('click', () => {
         saveItemToBasket(wrapperProduct.getAttribute('itemId'));
+        changeBasketItemCount();
     })
     imageWrapButton.appendChild(imageBtnBasket);
 

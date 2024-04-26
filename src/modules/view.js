@@ -23,6 +23,7 @@ function handleScroll() {
 // Добавляем прослушиватель события прокрутки
 window.addEventListener('scroll', handleScroll);
 
+// создаем шапку
 const headerLogo = document.createElement('div');
 headerLogo.innerHTML = 'Wildberries';
 headerLogo.classList.add('header__logo');
@@ -46,6 +47,7 @@ headerShoppingCart.classList.add('header__shopping__cart');
 headerShoppingCart.innerHTML = 'Корзина' + getItemsQuantity();
 divHeader.appendChild(headerShoppingCart);
 
+// счетчик для корзины
 function changeBasketItemCount() {
     document.querySelector('.header__shopping__cart').innerHTML = 'Корзина' + getItemsQuantity();
 }
@@ -148,6 +150,7 @@ const wrapperProducts = document.createElement('div');
 wrapperProducts.classList.add('wrapper__products');
 wrapperHitSales.appendChild(wrapperProducts);
 
+// показать элементы массива
 export function showItemList(itemList) {
     wrapperProducts.innerHTML = '';
     itemList.forEach(item => {
@@ -224,8 +227,8 @@ export function showItem(item) {
     imageBtnBasket.classList.add('image__btn-basket');
 
     imageBtnBasket.addEventListener('click', () => {
-        saveItemToBasket(wrapperProduct.getAttribute('itemId'));
-        changeBasketItemCount();
+        saveItemToBasket(wrapperProduct.getAttribute('itemId')); // сохраняем элемент в корзину
+        changeBasketItemCount(); // меняем число элементов в корзине
     })
     imageWrapButton.appendChild(imageBtnBasket);
 

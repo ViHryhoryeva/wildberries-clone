@@ -6,7 +6,7 @@ export function saveItemToBasket(itemId) {
     if (items == null) {
         items = [];
     } 
-    console.log(items.length)
+    // console.log(items.length)
     if (!(items.length >= 5)) {
         let item = getItemById(itemId);
         items.push(item);

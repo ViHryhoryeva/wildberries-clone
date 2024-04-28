@@ -135,6 +135,7 @@ function showBasket() {
 // карусель - реклама
 const wrapperCarusel = document.querySelector('.carousel');
 divWrapperWildberries.appendChild(wrapperCarusel);
+//
 
 const wrapperHitSales = document.createElement('div');
 wrapperHitSales.classList.add('wrapper__hit-sales');
@@ -144,8 +145,7 @@ const hitSales = document.createElement('h2');
 hitSales.classList.add('hit-sales');
 hitSales.innerHTML = 'Хиты продаж';
 wrapperHitSales.appendChild(hitSales);
-// 
-
+ 
 const wrapperProducts = document.createElement('div');
 wrapperProducts.classList.add('wrapper__products');
 wrapperHitSales.appendChild(wrapperProducts);

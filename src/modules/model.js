@@ -20,9 +20,8 @@ function downloadItemList(name) {
 }
 // получаем из fetch объекты и заполняем ими массив
 export function setItemList(data, name) {
-
     const regex = new RegExp(name, 'gi');
-    console.log(name);
+    // console.log(name);
     data.forEach(item => {
         let newItem = new Item(
             item.id,
@@ -35,7 +34,6 @@ export function setItemList(data, name) {
             itemList.push(newItem);
         }
     })
-
     showItemList(itemList);
 }
 // получить список элементов
@@ -50,7 +48,7 @@ export function findItemsByName(name) {
 // получить элементы по айди
 export function getItemById(itemId) {
     for (let item of itemList) {
-        console.log(item)
+        // console.log(item)
         if (item.id === itemId) {
             return item;
         }
